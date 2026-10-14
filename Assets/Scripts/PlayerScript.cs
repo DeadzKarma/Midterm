@@ -13,6 +13,8 @@ public class PlayerScript : MonoBehaviour
     //The Rigidbody2D is a component that gives the player physics, and is what we use to move
     public Rigidbody2D RB;
 
+    public bool grounded;
+
     //TextMeshPro is a component that draws text on the screen.
     //We use this one to show our score.
     public TextMeshPro ScoreText;
@@ -89,16 +91,7 @@ public class PlayerScript : MonoBehaviour
             {
                 vel.x = -currentSpeed;
             }
-            //If I hold the up arrow, the player should move up. . .
-            if (Keyboard.current.upArrowKey.isPressed)
-            {
-                vel.y = currentSpeed;
-            }
-            //If I hold the down arrow, the player should move down. . .
-            if (Keyboard.current.downArrowKey.isPressed)
-            {
-                vel.y = -currentSpeed;
-            }
+            
 
             //Finally, I take that variable and I feed it to the component in charge of movement
             RB.linearVelocity = vel;
