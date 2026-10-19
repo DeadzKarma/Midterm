@@ -8,25 +8,25 @@ public class jump : MonoBehaviour
     public Rigidbody2D myRB;
     public float jumpForce = 100f;
     public bool isGrounded;
-    public float jumpTimer = 0f;
-    public float jumpReset = 2f;
+  
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
-        isGrounded = false;
+        isGrounded = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
         direction = Vector3.zero;
-        if (Keyboard.current.leftArrowKey.isPressed)
+        if (Keyboard.current.aKey.isPressed)
         {
             direction += Vector3.left;
         }
-        if (Keyboard.current.rightArrowKey.isPressed)
+        if (Keyboard.current.dKey.isPressed)
         {
             direction += Vector3.right;
         }
@@ -42,19 +42,19 @@ public class jump : MonoBehaviour
 
     }
 
-    void Update()
+    void OnCollisionStay2D(Collision2D collision)
     {
-        //check to see if jump is on cooldown
-        if (jumpTimer > 2f)
+        if (collision.gameObject.tag == "Ground")
         {
-            jumpReset -= Time.deltaTime;
+            isGrounded = true;
         }
+    }
 
-        //if jump reset is up, cycel the timers back
-        if (jumpReset <= 0f)
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
         {
-            jumpTimer = 0f;
-            jumpReset = 2f;
+            isGrounded = false;
         }
     }
 

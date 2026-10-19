@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class PlayerScript : MonoBehaviour
 {
     //These are the player's Variables, the raw info that defines them
-    
+
     //The Rigidbody2D is a component that gives the player physics, and is what we use to move
     public Rigidbody2D RB;
 
@@ -20,10 +20,10 @@ public class PlayerScript : MonoBehaviour
     public TextMeshPro ScoreText;
 
     public TextMeshPro HealthText;
-    
+
     //This will control how fast the player moves
     public float Speed = 5;
-    
+
     //This is how many points we currently have
     public int Score = 0;
 
@@ -31,7 +31,7 @@ public class PlayerScript : MonoBehaviour
 
     public float dashTimer = 0f;
     public float dashReset = 2f;
-    
+
     //Start automatically gets triggered once when the objects turns on/the game starts
     void Start()
     {
@@ -91,15 +91,15 @@ public class PlayerScript : MonoBehaviour
             {
                 vel.x = -currentSpeed;
             }
-            
+
 
             //Finally, I take that variable and I feed it to the component in charge of movement
             RB.linearVelocity = vel;
         }
-            
+
     }
 
-    
+
 
     //This gets called whenever you bump into another object, like a wall or coin.
     private void OnCollisionEnter2D(Collision2D other)
@@ -118,7 +118,7 @@ public class PlayerScript : MonoBehaviour
                 Die();
             }
         }
-        
+
         //This checks to see if the thing you bumped into has the CoinScript script on it
         CoinScript coin = other.gameObject.GetComponent<CoinScript>();
         //If it does, run the code block belows
@@ -130,6 +130,10 @@ public class PlayerScript : MonoBehaviour
             Score++;
             //And then update the game's score text
             UpdateScore();
+            if (Score >= 5)
+            {
+                Win();
+            }
         }
     }
 
@@ -150,4 +154,10 @@ public class PlayerScript : MonoBehaviour
     {
         SceneManager.LoadScene("Game Over");
     }
+
+    public void Win()
+    {
+       SceneManager.LoadScene("Win");
+    }
+    
 }
