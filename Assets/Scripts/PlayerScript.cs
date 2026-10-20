@@ -130,7 +130,7 @@ public class PlayerScript : MonoBehaviour
             Score++;
             //And then update the game's score text
             UpdateScore();
-            if (Score >= 5)
+            if (Score >= 7)
             {
                 Win();
             }
