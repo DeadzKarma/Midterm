@@ -190,7 +190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9113574450173870731, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5119455
+      value: 2.4318855
       objectReference: {fileID: 0}
     - target: {fileID: 9113574450173870731, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -198,7 +198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9113574450173870731, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7246
+      value: 3.6845
       objectReference: {fileID: 0}
     - target: {fileID: 9113574450173870731, guid: fb946d28a97bb974a85272d12a1a51be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -955,15 +955,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10.042482
+      value: 10.08667
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.946
+      value: -10.9461
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.041
+      value: 0.0193
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1032,15 +1032,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10.042482
+      value: 10.086695
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.85
+      value: 10.8499
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.0221
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1174,11 +1174,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 22.01086
+      value: 22.032877
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0196
+      value: -0.0304
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1186,7 +1186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1287
+      value: 0.1285
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2119,7 +2119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7325685880339890275, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       propertyPath: m_GravityScale
-      value: 35
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 8714988357030234600, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2194,7 +2194,7 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   speed: 5
   myRB: {fileID: 3926531873766881999}
-  jumpForce: 800
+  jumpForce: 1000
   isGrounded: 1
 --- !u!1001 &6861759900474241344
 PrefabInstance:
