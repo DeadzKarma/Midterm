@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class jump : MonoBehaviour
 {
     public Vector3 direction;
-    public float speed = 10f;
+    public float speed = 5f;
     public Rigidbody2D myRB;
     public float jumpForce = 100f;
     public bool isGrounded;
