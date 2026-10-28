@@ -30,7 +30,10 @@ public class PlayerScript : MonoBehaviour
     public int Health = 5;
 
     public float dashTimer = 0f;
+
     public float dashReset = 2f;
+
+    public ParticleSystem PS;
 
     //Start automatically gets triggered once when the objects turns on/the game starts
     void Start()
@@ -110,6 +113,8 @@ public class PlayerScript : MonoBehaviour
         {
             //take damage
             Health--;
+
+            PS.Emit(5);
             //check to see if health is 0 or lower
             UpdateHealth();
             if (Health <= 0)
